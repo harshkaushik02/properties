@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <!-- LOGO START -->
+    <div class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo1.png" alt="logo" class="w-50" style="border-radius: 50%;">
+            </a>
+    
+        <div class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </div>
+        <!-- LOGO END -->
+        <!-- NAVBAR -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Popular</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Aboutus</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn text-white bg-dark px-3 rounded-9" href="contact.html" >Contact Us</a>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+
+
+      </div>  
+
+    </div>
+    <!-- NAVBAR END -->
+
+    <!-- caraousel -->
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" style="margin-top: 99px;">
+            <div class="carousel-item active">
+              <!-- <img src="site1.jpg" class="d-block apple" alt="img1"> -->
+              <video  autoplaying controls class="d-block apple" loop>
+                <source src="vedio.mp4" type="video/mp4"> 
+              </video>
+
+              <div class="carousel-caption carousel1">
+                <p>1 / 3</p>
+                <h5>Search Property <br> More Esaily</h5>
+                <div class="mt-5 d-flex">
+                    <input type="text" class="form-control Search w-50 rounded-7" id="floatingInput" placeholder="Search..."...>
+                    <button class="btn btn-light btn-sm justify-content-md-end mx-2 px-3 rounded-7"><i class="fas fa-search"></i></button>
+                </div>
+
+            </div>
+          </div>
+          <!-- second -->
+          <div class="carousel-item ">
+            <video autoplaying controls class="d-block apple" loop>
+                <source src="v2.mp4" >
+            </video>
+            <div class="carousel-caption carousel1">
+                <p>2 / 3</p>
+                <h5>Budget<br>Home</h5>
+                <input type="text" class="form-control Search w-50 rounded-7" id="floatingInput" placeholder="Search...."...>
+                <p><a href="#" class="btn btn-light btn-lg mt-3 rounded-7">Search More</a></p>
+
+                
+
+            </div>
+          </div>
+
+          <!-- third -->
+
+          <div class="carousel-item ">
+            <video autoplaying controls class="d-block apple" loop>
+                <source src="v3.mp4" > 
+            </video>
+            <div class="carousel-caption carousel1">
+                <p>3 / 3</p>
+                <h5>Any<br> State</h5>
+                <input type="text" class="form-control Search w-50 rounded-7" id="floatingInput" placeholder="Search...."...>
+                <p><a href="#" class="btn btn-light btn-lg mt-3 rounded-7">SearchMore</b></a></p>
+
+               
+
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="icon">&larr;</span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="icon">&rarr;</span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- card tile -->
+<!-- 
+      <div class="col-md-4 z-1 position-absolute card-bottom card mb-3 card color rounded-7 bg-black">
+        <div class="row align-items-center">
+          
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-light">Kaushik</h5>
+              <p class="card-text text-light">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <img src="about3.jpg" class="img-fluid rounded-start" alt="card-img">
+          </div>
+        </div>
+      </div> -->
+
+
+      <!-- popular part -->
+
+
+      <section class="container" style="margin-top: 100px;" id="popular">
+
+        <p class="pt-5">Popular</p>
+        <div class="d-flex justify">
+          <h2>Our Popular Property</h2>
+          <h6 class="ms-auto">Explore All <span class="arrow-icon">&rarr;</span></h6>
+        </div>
+
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
+          <div class="col">
+                <div class="card border-0 rounded-0">
+                  <img src="home4.jpeg" class="card-img-top rounded-0 " alt="img">
+                  <div class="card-body">
+                    <h6 class="yoyo">Palam , Delhi</h6>
+
+                    <div class="d-flex justify-content-center mt-3">
+                      <p class="mx-4 text-muted card-text"><i class="fa fa-car">Bed</i></p>
+                      <p class="mx-4 text-muted card-text"><i class="fa fa-play">5*5</i></p>
+                      <p class="mx-4 text-muted card-text"><i class="fa fa-compass">2000</i></p>
+                    </div>
+
+                    <div class="d-flex my-2">
+                      <button class="btn btn-lg text-white bg-dark px-4 rounded-7">Book Now</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>  
+
+              <div class="col">
+                <div class="card border-0 rounded-0">
+                  <img src="home5.jpeg" class="card-img-top rounded-0 " alt="img">
+                  <div class="card-body">
+                    <h6 class="yoyo">Dwarka , Delhi</h6>
+
+                    <div class="d-flex justify-content-center mt-3">
+                      <p class="mx-4 text-muted card-text"><i class="fa fa-car">Bed</i></p>
+                      <p class="mx-4 text-muted card-text"><i class="fa fa-play">5*5</i></p>
+                      <p class="mx-4 text-muted card-text"><i class="fa fa-compass">2000</i></p>
+                    </div>
+
+                    <div class="d-flex my-2">
+                      <button class="btn btn-lg text-white bg-dark px-4 rounded-7">Book Now</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>  
+                
+              <div class="col">
+                <div class="card border-0 rounded-0" >
+                  <img src="home3.jpeg " class="card-img-top rounded-0 " alt="img" style="height:230px;">
+                  <div class="card-body">
+                    <h6 class="yoyo">Gurgoan , Haryana</h6>
+
+                    <div class="d-flex justify-content-center mt-3">
+                      <p class="mx-4 text-muted card-text"><i class="fa fa-car">Bed</i></p>
+                      <p class="mx-4 text-muted card-text"><i class="fa fa-play">5*5</i></p>
+                      <p class="mx-4 text-muted card-text"><i class="fa fa-compass">2000</i></p>
+                    </div>
+
+                    <div class="d-flex my-2">
+                      <button class="btn btn-lg text-white bg-dark px-4 rounded-7">Book Now</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>  
+
+        </div>
+
+</section>
+
+<!-- 2nddddddddddddddddddddddddddddd -->
+
+
+<section class="container" style="margin-top: 9px;" id="popular">
+
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
+    <div class="col">
+          <div class="card border-0 rounded-0">
+            <img src="site1.jpg" class="card-img-top rounded-0 " alt="img">
+            <div class="card-body">
+              <h6 class="yoyo">Faridabad , Uttarpardesh</h6>
+
+              <div class="d-flex justify-content-center mt-3">
+                <p class="mx-4 text-muted card-text"><i class="fa fa-car">Bed</i></p>
+                <p class="mx-4 text-muted card-text"><i class="fa fa-play">5*5</i></p>
+                <p class="mx-4 text-muted card-text"><i class="fa fa-compass">32000</i></p>
+              </div>
+
+              <div class="d-flex my-2">
+                <button class="btn btn-lg text-white bg-dark px-4 rounded-7">Book Now</button>
+              </div>
+
+            </div>
+          </div>
+        </div>  
+
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img src="site3.jpeg" class="card-img-top rounded-0 " alt="img" height="238px"> 
+            <div class="card-body">
+              <h6 class="yoyo">Noida , Uttarpardesh</h6>
+
+              <div class="d-flex justify-content-center mt-3">
+                <p class="mx-4 text-muted card-text"><i class="fa fa-car">Bed</i></p>
+                <p class="mx-4 text-muted card-text"><i class="fa fa-play">5*5</i></p>
+                <p class="mx-4 text-muted card-text"><i class="fa fa-compass">12000</i></p>
+              </div>
+
+              <div class="d-flex my-2">
+                <button class="btn btn-lg text-white bg-dark px-4 rounded-7">Book Now</button>
+              </div>
+
+            </div>
+          </div>
+        </div>  
+          
+        <div class="col">
+          <div class="card border-0 rounded-0" >
+            <img src="naya.jpg" class="card-img-top rounded-0 " alt="img" style="height:238px;">
+            <div class="card-body">
+              <h6 class="yoyo">Gaziabaad , Uttarpardesh</h6>
+
+              <div class="d-flex justify-content-center mt-3">
+                <p class="mx-4 text-muted card-text"><i class="fa fa-car">Bed</i></p>
+                <p class="mx-4 text-muted card-text"><i class="fa fa-play">5*5</i></p>
+                <p class="mx-4 text-muted card-text"><i class="fa fa-compass">22000</i></p>
+              </div>
+
+              <div class="d-flex my-2">
+                <button class="btn btn-lg text-white bg-dark px-4 rounded-7">Book Now</button>
+              </div>
+
+            </div>
+          </div>
+        </div>  
+
+  </div>
+
+</section>
+
+
+
+<!-- 3rdddddddddddddddddddddddd -->
+
+<section class="container" style="margin-top: 9px;" id="popular">
+
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
+    <div class="col">
+          <div class="card border-0 rounded-0">
+            <img src="plot.jpeg" class="card-img-top rounded-0 " alt="img" height="240px">
+            <div class="card-body">
+              <h6 class="yoyo">Najafgarh , Haryana</h6>
+
+              <div class="d-flex justify-content-center mt-3">
+                <p class="mx-4 text-muted card-text"><i class="fa fa-car">Bed</i></p>
+                <p class="mx-4 text-muted card-text"><i class="fa fa-play">5*5</i></p>
+                <p class="mx-4 text-muted card-text"><i class="fa fa-compass">9000</i></p>
+              </div>
+
+              <div class="d-flex my-2">
+                <button class="btn btn-lg text-white bg-dark px-4 rounded-7">Book Now</button>
+              </div>
+
+            </div>
+          </div>
+        </div>  
+
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img src="plot2.jpeg" class="card-img-top rounded-0 " alt="img" height="240px">
+            <div class="card-body">
+              <h6 class="yoyo">Bijwasan , Ncr DELHI</h6>
+
+              <div class="d-flex justify-content-center mt-3">
+                <p class="mx-4 text-muted card-text"><i class="fa fa-car">Bed</i></p>
+                <p class="mx-4 text-muted card-text"><i class="fa fa-play">5*5</i></p>
+                <p class="mx-4 text-muted card-text"><i class="fa fa-compass">6000</i></p>
+              </div>
+
+              <div class="d-flex my-2">
+                <button class="btn btn-lg text-white bg-dark px-4 rounded-7">Book Now</button>
+              </div>
+
+            </div>
+          </div>
+        </div>  
+          
+        <div class="col">
+          <div class="card border-0 rounded-0" >
+            <img src="plot3.jpeg" class="card-img-top rounded-0 " alt="img" style="height:240px;">
+            <div class="card-body">
+              <h6 class="yoyo">Kapashera , Bijwasan</h6>
+
+              <div class="d-flex justify-content-center mt-3">
+                <p class="mx-4 text-muted card-text"><i class="fa fa-car">Bed</i></p>
+                <p class="mx-4 text-muted card-text"><i class="fa fa-play">5*5</i></p>
+                <p class="mx-4 text-muted card-text"><i class="fa fa-compass">8000</i></p>
+              </div>
+
+              <div class="d-flex my-2">
+                <button class="btn btn-lg text-white bg-dark px-4 rounded-7">Book Now</button>
+              </div>
+
+            </div>
+          </div>
+        </div>  
+
+  </div>
+
+</section>
+
+
+  <!-- 4rttttt -->
+
+  <section class="container" style="margin-top: 9px;" id="popular">
+
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
+      <div class="col">
+            <div class="card border-0 rounded-0">
+              <img src="home7.jpeg" class="card-img-top rounded-0 " alt="img" height="229px">
+              <div class="card-body">
+                <h6 class="yoyo"> Rajouri Garden , Delhi</h6>
+  
+                <div class="d-flex justify-content-center mt-3">
+                  <p class="mx-4 text-muted card-text"><i class="fa fa-car">Bed</i></p>
+                  <p class="mx-4 text-muted card-text"><i class="fa fa-play">5*5</i></p>
+                  <p class="mx-4 text-muted card-text"><i class="fa fa-compass">9000</i></p>
+                </div>
+  
+                <div class="d-flex my-2">
+                  <button class="btn btn-lg text-white bg-dark px-4 rounded-7">Book Now</button>
+                </div>
+  
+              </div>
+            </div>
+          </div>  
+  
+          <div class="col">
+            <div class="card border-0 rounded-0">
+              <img src="home5.jpeg" class="card-img-top rounded-0 " alt="img">
+              <div class="card-body">
+                <h6 class="yoyo">Botanical Garden , Noida</h6>
+  
+                <div class="d-flex justify-content-center mt-3">
+                  <p class="mx-4 text-muted card-text"><i class="fa fa-car">Bed</i></p>
+                  <p class="mx-4 text-muted card-text"><i class="fa fa-play">5*5</i></p>
+                  <p class="mx-4 text-muted card-text"><i class="fa fa-compass">2000</i></p>
+                </div>
+  
+                <div class="d-flex my-2">
+                  <button class="btn btn-lg text-white bg-dark px-4 rounded-7">Book Now</button>
+                </div>
+  
+              </div>
+            </div>
+          </div>  
+            
+          <div class="col">
+            <div class="card border-0 rounded-0" >
+              <img src="home3.jpeg " class="card-img-top rounded-0 " alt="img" style="height:229px;">
+              <div class="card-body">
+                <h6 class="yoyo">Kapashera , Bijwasan</h6>
+  
+                <div class="d-flex justify-content-center mt-3">
+                  <p class="mx-4 text-muted card-text"><i class="fa fa-car">Bed</i></p>
+                  <p class="mx-4 text-muted card-text"><i class="fa fa-play">5*5</i></p>
+                  <p class="mx-4 text-muted card-text"><i class="fa fa-compass">2000</i></p>
+                </div>
+  
+                <div class="d-flex my-2">
+                  <button class="btn btn-lg text-white bg-dark px-4 rounded-7">Book Now</button>
+                </div>
+  
+              </div>
+            </div>
+          </div>  
+  
+    </div>
+  
+  </section>
+
+
+  <!-- bich -->
+  <section class="bg-dark" style="margin-top: -15%;" id="blog">
+    <div class="container pt-5">
+      <div class="row" style="margin-top: 25%;">
+          <div class="col-lg-4">
+                <h2 style="color: #b5b5b5;">Harsh Kaushik</h2>
+                <p style="color: #b5b5b5;">Founder Kaushik</p>
+          </div>
+          <div class="col-lg-8 mt-6">
+            <h6 class="" style="color: #b5b5b5; font-size: 13px;">&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil praesentium voluptatibus officiis optio tempora magnam quidem nisi voluptates. Nulla quos doloribus, impedit officiis sit vel similique repudiandae rerum modi libero!&rdquo;</h6>
+          </div>
+      </div>
+        <hr class="text-light">
+        <div class="container mt-6 pb-5">
+          <div class="row text-center">
+            <div class="col-md-3 col-sm-6">
+              <img src="logo.jpeg" alt="" style="width: 55%; border-radius: 50%;">
+
+            </div>
+            <div class="col-md-3 col-sm-6 mt-3">
+              <img src="me.jpg" alt="" style="width: 65%; border-radius: 50%; height: 150px;" >
+
+            </div>
+            <div class="col-md-3 col-sm-6 mt-2">
+              <img src="OIP (1).jpeg" alt="" style="width: 55%; border-radius: 50%;">
+
+            </div>
+            <div class="col-md-3 col-sm-6 mt-2">
+              <img src="OIP (2).jpeg" alt="" style="width: 55%; border-radius: 50%;">
+
+            </div>
+
+          </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- end -->
+
+
+<!-- services -->
+
+<section class="about section-padding" style="margin-top: 40px;" id="services">
+
+      <div class="text-center pb-1">
+        <h2>Our Services</h2>
+      </div>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-12">
+              <div class="d-flex">
+               
+
+                <div class="about-img">
+                  <img src="about1.jpg" alt="img" class="img-fluid  mt-5" width="80%" height="500px">
+                </div>
+                
+              </div>
+              <div class="about-img">
+                <img src="about3.jpg" alt="img" class="img-fluid  mt-5" width="80%" height="500px">
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-12 col-12 ps-lg-5 mt-md-5" style="margin-top: 40px;">
+            <h2>Comfort is our <br> Top Property for your</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae cumque deserunt odit eum laboriosam quibusdam impedit dolor quod dolorum dignissimos adipisci voluptatibus facilis sunt quos, cum quo eveniet similique vitae distinctio, rem obcaecati iusto ab? Pariatur ipsam, libero laborum aliquam modi natus distinctio rem recusandae dolore beatae quis sed quod hic magni? Ab, velit voluptas amet consequuntur, deleniti optio quam placeat, itaque nihil tempora dolorem quisquam dolor aut maiores rerum delectus repellendus corporis exercitationem voluptatem dignissimos odio blanditiis at! Itaque sint cupiditate corporis praesentium ullam perspiciatis culpa at architecto, assumenda quod sit sapiente veritatis quam possimus, rerum cumque ipsum quidem!</p>
+              <a href="#" class="btn text-white bg-dark px-3 rounded-7">See More</a>
+
+            </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+
+        <div class="row">
+          <div class="text-center pb-1">
+            <h4>We are comited to helping our cilents to reach thier goals. </h4>
+          </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                  <i class="fa-solid fa-house mt-3" style="color: #4c72ae;  font-size: 50px;"  ></i>
+                    <div class="card-body">
+                        <h4 class="card-title">Sell your home</h4>
+                        <p class="card-text">Clean and declutter: Make your home look appealing by cleaning and decluttering. A tidy space can create a positive impression on potential buyers.
+                          Make necessary repairs: Address any maintenance issues or needed repairs. This includes fixing leaky faucets, replacing broken tiles, and addressing any structural issues.</p>
+                        <a href="#" class="hhh">Learn more&rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2nd -->
+            <div class="col-md-3">
+              <div class="card text-center">
+                <i class="fa-solid fa-house mt-3" style="color: #4c72ae;  font-size: 50px;"  ></i>
+                  <div class="card-body">
+                      <h4 class="card-title">Sell your home</h4>
+                      <p class="card-text">Obtain a copy of your credit report and check your credit score. A higher credit score can often lead to better loan terms.
+                        Evaluate Your Finances:
+                        
+                        Calculate your monthly income, expenses, and existing debts. This will help you determine how much you can afford to borrow for a </p>
+                      <a href="#" class="hhh">Learn more&rarr;</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- 3rd -->
+          <div class="col-md-3">
+            <div class="card text-center">
+              <i class="fa-solid fa-house mt-3" style="color: #4c72ae;  font-size: 50px;"  ></i>
+                <div class="card-body">
+                    <h4 class="card-title">Sell your home</h4>
+                    <p class="card-text">Clean and declutter: Make your home look appealing by cleaning and decluttering. A tidy space can create a positive impression on potential buyers.
+                      Make necessary repairs: Address any maintenance issues or needed repairs. This includes fixing leaky faucets, replacing broken tiles, and addressing any structural issues.</p>
+                    <a href="#" class="hhh">Learn more&rarr;</a>
+                </div>
+            </div>
+        </div>
+          <!-- 4rt -->
+          <div class="col-md-3">
+            <div class="card text-center">
+              <i class="fa-solid fa-house mt-3" style="color: #4c72ae;  font-size: 50px;"  ></i>
+                <div class="card-body">
+                    <h4 class="card-title">Sell your home</h4>
+                    <p class="card-text">Clean and declutter: Make your home look appealing by cleaning and decluttering. A tidy space can create a positive impression on potential buyers.
+                      Make necessary repairs: Address any maintenance issues or needed repairs. This includes fixing leaky faucets, replacing broken tiles, and addressing any structural issues.</p>
+                    <a href="#" class="hhh">Learn more&rarr;</a>
+                </div>
+            </div>
+        </div>
+
+
+
+</section>
+<!-- end -->
+
+
+<!-- bs -->
+  
+
+<section class="container" style="margin-top: 100px;" id="popular">
+
+  <p class="pt-5">Blog</p>
+  <div class="d-flex justify">
+    <h2>Latest Housing Information</h2>
+    <button class="btn text-white bg-dark px-4 btn-md ms-auto rounded-0">See All Articles</button>
+  </div>
+
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
+    <div class="col">
+          <div class="card border-0 rounded-0">
+            <img src="ppp.jpeg" class="card-img-top rounded-0 " alt="img">
+            <div class="card-body">
+              <h6 class="yoyo">Rewari , Haryana</h6>
+              <p class="card-text text-muted">Housing market conditions can change rapidly, and the most up-to-date information can vary by location. To get the latest housing information, I recommend checking real estate websites, local news sources, or contacting a local real estate agent who can provide you with current market trends, housing prices, and other relevant information in the area you're interested in.
+
+
+
+
+
+              </p>
+
+                <button class="btn text-primary px-4 rounded-0 btn-lg" style="background: #d4e9ff;">Book Now</button>
+
+            </div>
+          </div>
+        </div>  
+
+        
+        <div class="card border-0 rounded-0">
+          <img src="pppp1.jpeg" class="card-img-top rounded-0 " alt="img" height="214px">
+          <div class="card-body">
+            <h6 class="yoyo">Patudi , Haryana</h6>
+            <p class="card-text text-muted">Foundation Construction:
+
+              Digging trenches and setting up the foundation, which can be a slab, crawl space, or basement, depending on the design and site conditions.
+              Pouring concrete and placing reinforcement to create a stable foundation.
+              Substructure Construction:
+
+Building the elements below ground level, such as basements and underground parking structures.
+
+
+
+
+
+            </p>
+
+              <button class="btn text-primary px-4 rounded-0 btn-lg" style="background: #d4e9ff;">Book Now</button>
+
+          </div>
+        </div>
+      
+
+
+
+      <div class="card border-0 rounded-0">
+        <img src="ppp2.jpeg" class="card-img-top rounded-0 " alt="img" height="214px">
+        <div class="card-body">
+          <h6 class="yoyo">Jaipur , Rajasthan</h6>
+          <p class="card-text text-muted">Design and Planning:
+
+            Architectural Design: An architect creates a design based on the client's requirements, local building codes, and the site conditions.
+            Structural Design: Engineers design the structural components to ensure the building's stability and safety.
+            Site Preparation:
+            
+            Clearing the land, excavating, and grading the site to prepare a level foundation.
+
+
+
+
+
+
+          </p>
+
+            <button class="btn text-primary px-4 rounded-0 btn-lg" style="background: #d4e9ff;">Book Now</button>
+
+        </div>
+      </div>
+    </div>  
+
+       
+        
+  </div>
+
+</section>
+
+<!-- location area -->
+<div class="text-center mt1">
+  <h2 class="map"><span style="border-bottom: 2px solid black;">Kaushik Property</span>
+    </h2>
+  
+</div>
+<map class="container mt-5">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.6616384848503!2d77.0734758!3d28.609925899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05004532c21b%3A0xb5d35b2b1debe676!2sJanki%20Developers%20and%20Properties%2CHead%20office%20(%20Home%20)!5e0!3m2!1sen!2sin!4v1706074635961!5m2!1sen!2sin" width="100%" height="450" style="border-radius:10%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+</map>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+

@@ -12,6 +12,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet"> <!--font style for description-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"> <!--font style for services part-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
 </head>
 <body>
 <!-- footer section -->
@@ -63,7 +69,7 @@
 
 </div>
 
-        <div class="row a-tag ">
+        <div class="row a-tag " id="animate1">
           <h1>Contact Us</h1>
       </div>
   </header>
@@ -72,7 +78,7 @@
   <section class="contact">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 contact-details">
+        <div class="col-lg-6 contact-details" id="animate3">
           <h3>Enter Details</h3>
           <input type="text" id="name" placeholder="Name">
           <input type="email" id="name" placeholder="Email">
@@ -82,7 +88,7 @@
           </button>
         </div>
 
-        <div class="col-lg-6 phone-detail mt-3">
+        <div class="col-lg-6 phone-detail mt-3" id="animate2">
           <i class="fa-solid fa-phone"></i>
           <p>PH.no 11 23512345</p>
           <p>M.no +91 9823452324</p>
@@ -126,7 +132,7 @@
   
   <div class="container">
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-6" >
         <h5 class="text-light">About Us</h5>
         <p class="text-light">It seems like you're asking for information about a specific "us property," but your question is a bit vague. Could you please provide more details or clarify what you're looking for? Are you referring to a particular real estate property, a company named "us property," or something else? The more information you provide, the better I can assist you.</p>
         <p class="text-light"><i class="fa fa-location">WZ-697 Palam Village ND-45</i></p>
@@ -167,6 +173,38 @@
   </div>
 
 </footer>
+
+
+
+<script>
+  $(document).ready(function(){
+      $(window).scroll(function(){
+          var positionTop = $(document).scrollTop();
+          console.log(positionTop);
+          if((positionTop > 50) && (positionTop < 900)){
+          $("#animate1").addClass("animate__animated animate__backInDown");
+
+
+      }
+      
+      if((positionTop > 50) && (positionTop < 900)){
+          $("#animate2").addClass("animate__animated animate__backInRight");
+
+
+      }
+
+      if((positionTop > 50) && (positionTop < 900)){
+          $("#animate3").addClass("animate__animated animate__backInLeft");
+
+
+      }
+      
+
+     
+    }) 
+      
+  }) 
+      </script>
  
 <!-- bootstrap javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

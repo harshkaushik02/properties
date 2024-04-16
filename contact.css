@@ -11,7 +11,7 @@ body {
 /* design of header and navigation(menu) */
 header{
   /* background-image: linear-gradient( to top, rgba(42, 81, 165, 0.205), rgba(33, 116, 194, 0.253)),url(../images/room-background.jpg); */
-  /* height: 600px; */
+  /* height: -200px; */
   /* background-repeat: no-repeat;
   background-size: cover; */
   padding-bottom: 50px;
@@ -146,3 +146,6 @@ a.b-name {
   text-decoration: none;
   color: #aeaeae;
 }
+
+
+
